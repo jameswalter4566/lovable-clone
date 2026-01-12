@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+@theme {
+  /* Lovable Design System Colors (HSL values) */
+  --color-background: hsl(0 0% 11%);
+  --color-foreground: hsl(45 40% 98%);
+  --color-card: hsl(0 0% 5%);
+  --color-card-foreground: hsl(45 40% 98%);
+  --color-primary: hsl(45 40% 98%);
+  --color-primary-foreground: hsl(0 0% 11%);
+  --color-secondary: hsl(60 3% 15%);
+  --color-secondary-foreground: hsl(45 40% 98%);
+  --color-muted: hsl(60 3% 15%);
+  --color-muted-foreground: hsl(45 10% 60%);
+  --color-accent: hsl(217 33% 22%);
+  --color-accent-foreground: hsl(217 100% 72%);
+  --color-border: hsl(60 3% 15%);
+  --color-ring: hsl(47 10% 83%);
+  
+  /* Sidebar */
+  --color-sidebar: rgba(13, 13, 13, 0.95);
+  --color-sidebar-foreground: hsl(42 38% 95%);
+  --color-sidebar-border: hsl(60 3% 15%);
+  
+  /* Chat input */
+  --color-chat-bg: rgb(39, 39, 37);
+  --color-chat-border: rgba(252, 251, 248, 0.16);
+  
+  /* Radius */
+  --radius: 0.5rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.5rem;
+  --radius-2xl: 1.75rem;
+  
+  /* Fonts */
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  min-height: 100vh;
+}
+
+/* Gradient background */
+.gradient-bg {
+  background: 
+    radial-gradient(ellipse 80% 50% at 50% 100%, rgba(236, 72, 153, 0.4) 0%, transparent 50%),
+    radial-gradient(ellipse 60% 40% at 50% 80%, rgba(139, 92, 246, 0.3) 0%, transparent 50%),
+    radial-gradient(ellipse 50% 30% at 50% 60%, rgba(59, 130, 246, 0.3) 0%, transparent 50%),
+    linear-gradient(to bottom, hsl(0 0% 11%) 0%, hsl(0 0% 8%) 100%);
+}
